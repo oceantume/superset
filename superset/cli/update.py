@@ -46,7 +46,7 @@ logger = logging.getLogger(__name__)
     "-s",
     is_flag=True,
     default=False,
-    help="Create the DB if it doesn't exist",
+    help="Don't create the DB if it doesn't exist",
 )
 def set_database_uri(database_name: str, uri: str, skip_create: bool) -> None:
     """Updates a database connection URI"""
